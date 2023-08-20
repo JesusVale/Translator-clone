@@ -1,0 +1,174 @@
+:root {
+  --toastify-color-dark: #2B2A29;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #ECE8E1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.Toastify__toast-container--bottom-left {
+  font-weight: bold;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.translate-input {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  width: 40%;
+  position: relative;
+  /*&__languages{
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+  }*/
+}
+.translate-input__options {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(90deg, rgb(255, 60, 70) 50%, rgb(255, 112, 95) 100%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.translate-input__input {
+  width: 100%;
+  height: 20rem;
+  background-color: #2B2A29;
+  color: white;
+  resize: none;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.translate-input__input:focus {
+  outline: none;
+}
+.translate-input__columns {
+  display: flex;
+}
+.translate-input__intechangeButton {
+  border: none;
+  background-image: linear-gradient(90deg, rgb(255, 60, 70) 50%, rgb(255, 112, 95) 100%);
+  border-radius: 0.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+.translate-input__intechangeButton svg {
+  transition: transform 0.3s ease-in-out;
+}
+.translate-input__intechangeButton:hover {
+  cursor: pointer;
+}
+.translate-input__intechangeButton:hover svg {
+  transform: rotate(360deg);
+}
+.translate-input__extra {
+  position: absolute;
+  display: flex;
+  right: 0;
+  bottom: 0;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+.translate-input__feature {
+  background-color: transparent;
+  border: none;
+}
+.translate-input__feature:hover {
+  cursor: pointer;
+}
+
+.language {
+  background-color: transparent;
+  display: flex;
+  border: none;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.language__icon {
+  height: 20px;
+}
+.language--selected {
+  background-color: rgb(255, 110, 94);
+}
+.language:hover {
+  cursor: pointer;
+  background-color: rgb(255, 110, 94);
+}
+
+.select-languages__button {
+  border: none;
+  background-color: transparent;
+  padding-right: 1rem;
+  display: flex;
+}
+.select-languages__button svg {
+  transition: transform 0.2s;
+}
+.select-languages__button--open svg {
+  transform: rotate(180deg);
+}
+.select-languages__button:hover {
+  cursor: pointer;
+}
+.select-languages__languages {
+  width: 100%;
+  display: none;
+  top: 100%;
+  left: 0;
+  gap: 0.4rem;
+  background-color: #2B2A29;
+  border: 1px solid rgb(255, 60, 70);
+  position: absolute;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.select-languages__languages--open {
+  display: grid;
+}
+
+.selectLanguage-columns {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+.selectLanguage-columns__columns {
+  display: flex;
+}/*# sourceMappingURL=app.css.map */

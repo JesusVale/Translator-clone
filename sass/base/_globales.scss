@@ -1,0 +1,40 @@
+@use "variables" as v;
+
+:root{
+    --toastify-color-dark: #2B2A29;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    background-color: v.$colorBackground;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+button:disabled{
+    opacity: 0.5;
+}
+
+.Toastify__toast-container--bottom-left {
+    font-weight: bold;
+    width: fit-content;
+}
